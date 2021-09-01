@@ -1,0 +1,15 @@
+{
+    "success": true,
+    "result": {
+        "variant": "2N IP Verso",
+        "variantId": 14,
+        "customerId": 0,
+        "serialNumber": "54-1111-1111",
+        "macAddr": "1A-1B-B1-01-11-11",
+        "hwVersion": "123v6",
+        "swVersion": "1.11.1.11.1",
+        "buildType": "",
+        "firmwarePackage": "verso",
+        "deviceName": "2N IP Verso"
+    }
+}

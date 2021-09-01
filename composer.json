@@ -1,42 +1,47 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "saurabhsharma/tes-laravel",
+    "description": "PHP Wrapper for 2N API",
     "keywords": [
-        ":vendor_name",
+        "SaurabhSharma",
         "laravel",
-        "package_slug"
+        "tes-laravel"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/saurabhsharma2u/tes-laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
+            "role": "Developer",
+            "name": "Saurabh Sharma",
+            "email": "saurabhsharma2u@gmail.com",
+            "homepage": "https://www.svss.me"
         }
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/contracts": "^8.37",
+        "juststeveking/http-status-code": "^2.0",
+        "juststeveking/laravel-transporter": "^0.8.0",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
         "nunomaduro/collision": "^5.3",
         "orchestra/testbench": "^6.15",
+        "pestphp/pest": "^1.18",
+        "pestphp/pest-plugin-parallel": "^0.3.0",
         "phpunit/phpunit": "^9.3",
         "spatie/laravel-ray": "^1.23",
         "vimeo/psalm": "^4.8"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "SaurabhSharma\\TES\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "SaurabhSharma\\TES\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +55,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "SaurabhSharma\\TES\\TESServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "TES": "SaurabhSharma\\TES\\TESFacade"
             }
         }
     },
