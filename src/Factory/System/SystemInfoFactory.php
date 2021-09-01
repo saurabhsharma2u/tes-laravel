@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace SaurabhSharma\TES\Factory\System;
 
-
 use SaurabhSharma\TES\ValueObject\System\SystemInfo;
 
 class SystemInfoFactory

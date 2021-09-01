@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace SaurabhSharma\TES;
 
 use SaurabhSharma\TES\Resources\System;
-use SaurabhSharma\TES\Transporter\SystemRequest;
 
 class TES
 {
-    public static function System():System
+    public static function System(): System
     {
-       return new System();
+        return new System();
     }
+
 //
 //    public static function config() :Config
 //    {

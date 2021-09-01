@@ -7,9 +7,9 @@ use SaurabhSharma\TES\ValueObject\System\SystemInfo;
 use SaurabhSharma\TES\ValueObject\System\SystemStatus;
 
 it('can send api request and get system info', function () {
-    expect(TES::System()->get_info())->toBeInstanceOf(SystemInfo::Class);
+    expect(TES::System()->get_info())->toBeInstanceOf(SystemInfo::class);
 });
 
 it('can send api request and get system status', function () {
-    expect(TES::System()->get_status())->toBeInstanceOf(SystemStatus::Class);
+    expect(TES::System()->get_status())->toBeInstanceOf(SystemStatus::class);
 });
