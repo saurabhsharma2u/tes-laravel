@@ -6,18 +6,17 @@ namespace SaurabhSharma\TES\Transporter;
 
 use JustSteveKing\Transporter\Request;
 
-
 class TESRequest extends Request
 {
-    protected string $method='GET';
-    protected string $baseUrl= '';
+    protected string $method = 'GET';
+    protected string $baseUrl = '';
 
-    public function authenticate():self
+    public function authenticate(): self
     {
         $this->request
-            ->withDigestAuth('admin','hAe2dGKB')
+            ->withDigestAuth('admin', 'hAe2dGKB')
             ->withOptions([
-                'verify'=>false
+                'verify' => false,
             ]);
 
 

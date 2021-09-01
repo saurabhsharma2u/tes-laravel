@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace SaurabhSharma\TES\Resources;
 
-use http\Exception;
 use SaurabhSharma\TES\Factory\System\SystemInfoFactory;
 use SaurabhSharma\TES\Factory\System\SystemStatusFactory;
 use SaurabhSharma\TES\Transporter\System\InfoRequest;
@@ -39,15 +38,12 @@ class System
             ->authenticate()
             ->send();
 
-        if($response->failed()){
+        if ($response->failed()) {
             throw $response->toException();
         }
 
         return SystemStatusFactory::make(
             attributes: $response->json()['result']
         );
-
     }
-
-
 }

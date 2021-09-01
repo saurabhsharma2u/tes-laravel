@@ -6,7 +6,6 @@ namespace SaurabhSharma\TES\ValueObject\System;
 
 class SystemInfo
 {
-
     public function __construct(
         public string $variant,
         public int $variantId,
@@ -18,5 +17,6 @@ class SystemInfo
         public string $buildType,
         public string $firmwarePackage,
         public string $deviceName
-    ){}
+    ) {
+    }
 }
